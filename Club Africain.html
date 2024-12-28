@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Africain</title>
+    <style>
+        h1,h2{
+            text-align: center;
+        }
+        header,nav,section,footer{
+            border: 1px solid red;
+        }
+        section h2{
+            color: rgb(223, 130, 130);
+        }
+        nav{
+            display: flex;
+            background-color: red;
+            justify-content: space-around;
+        }
+        nav ul li{
+            display: inline;
+        }
+        a:active{
+            color: white;
+        }
+        a:visited{
+            color: white;
+        }
+        img{
+            float: left;
+            height: 80px;
+            width: 100px;
+        }
+        footer{
+            text-align: center;
+        }
+    </style>
+    <body>
+        <header>
+        <img src= "https://th.bing.com/th/id/OIP.wxL1tWIS3D6qOiEQqwOnxAHaPs?rs=1&pid=ImgDetMain">
+        <h1>Club Africain</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#h">Accueil</a></li>
+                <li><a href="#c">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="h">
+            <h2>Presentation about Club Africain</h2>
+            <blockquote cite="https://fr.wikipedia.org/wiki/Club_africain_(football)">
+                <p>Le Club Africain est un grand club de football tunisien basé à Tunis. Le club a été fondé en 1920 et a remporté 13 titres de champion de Tunisie et 13 Coupes de Tunisie . Le club a également remporté 3 fois supercoupe de Tunisie, 1 fois comme champion de Ligue des champions, 1 fois comme champion de coupe afro-asiatique etc... <br>
+                    Le Club africain, comme l'affirment certains de ses pères fondateurs, est le prolongement naturel du Stade africain (association fondée en 1915 et dissoute en 1918) dont il conserve les couleurs, l'esprit, une partie du nom ainsi qu'un noyau de joueurs (particulièrement Mohamed Soudani). Ce dernier est d'ailleurs le président de la réunion constitutive du club qui est tenue dans un café de Bab Jedid appartenant à une famille désormais clubiste. Il est à signaler que le premier siège social du club est le Makhzen Essouf (dépôt de laine) qui est situé dans le quartier d'El Morkadh.</p>
+            </blockquote>
+        </section>
+        <section id="c">
+            <h2>Contact</h2>
+            <form>
+                <fieldset>
+                    <legend>Contact</legend>
+                    <table>
+                        <tr>
+                            <td><label for="Nom et prenom">Nom et prénom : </label></td>
+                            <td><input type="text" maxlength="10" minlength="4" id="n" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Email">Email : </label></td>
+                            <td><input type="mail" id="e" placeholder="exam@yahoo.com" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Mot de passe">Mot de passe</label></td>
+                            <td><input type="password" id="p" maxlength="12" min="8" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="CIN">N°CIN : </label>
+                            <td><input type="number" id="c" required></td></td>
+                        </tr>
+                        <tr>
+                            <td><label for="Ville">Ville : </label></td>
+                            <td>
+                                <select>
+                                    <option value="Tunis" selected>Tunis</option>
+                                    <option value="Zaghouane">Zaghouane</option>
+                                    <option value="Marsa">Marsa</option>
+                                    <option value="Tozeur">Tozeur</option>
+                                    <option value="Autre pays">Autre pays</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="Envoyer">
+                    <input type="reset" value="Réinitialiser">
+                </fieldset>
+            </form>
+        </section>
+        <footer>
+            <span>2017 Copyright by @Youssef</span>
+        </footer>
+    </body>
+</html>
